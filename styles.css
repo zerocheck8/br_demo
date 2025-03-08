@@ -151,7 +151,7 @@ a:hover {
 
 /* 英雄区域布局优化 */
 .hero {
-    padding: 10px 0 40px;
+    padding: 40px 0;
     background: linear-gradient(to bottom, #f5f0ff, #ffffff);
     overflow: hidden;
     margin-top: -10px;
@@ -772,6 +772,45 @@ a:hover {
 }
 
 @media (min-width: 992px) {
+    body {
+        font-size: 15px;
+    }
+    
+    .container {
+        padding: 0 25px;
+    }
+    
+    .rewards-card {
+        padding: 35px;
+    }
+    
+    .stats-container {
+        gap: 25px;
+        margin: 30px auto 50px;
+    }
+    
+    .stat-item {
+        padding: 30px 20px;
+    }
+    
+    .stat-number {
+        font-size: 32px;
+    }
+    
+    .hero h1 {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+    
+    .new-title {
+        font-size: 20px;
+    }
+    
+    .rewards-title, .features h2, .markets h2, .testimonials h2 {
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
+    
     .app-showcase-container {
         flex-direction: row;
         align-items: center;
@@ -804,6 +843,62 @@ a:hover {
     
     .hero-image {
         max-width: 50%;
+    }
+
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+    
+    .market-carousel {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .market-item {
+        flex: 0 0 calc(20% - 20px);
+        max-width: 180px;
+        padding: 20px 15px;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .feature-item {
+        padding: 35px 25px;
+        border-radius: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feature-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(76, 33, 189, 0.15);
+    }
+    
+    .feature-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .feature-item h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .bonus-cards {
+        display: flex;
+        gap: 30px;
+        margin: 40px 0;
+    }
+    
+    .bonus-card {
+        padding: 30px;
+        border-radius: 20px;
     }
 }
 
@@ -1906,4 +2001,109 @@ a:hover {
     margin-bottom: 20px;
     max-width: 100%;
     color: #000000;
+}
+
+/* PC大屏幕适配 */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 30px;
+    }
+    
+    body {
+        font-size: 16px;
+    }
+    
+    .hero .container {
+        gap: 50px;
+    }
+    
+    .hero-content {
+        flex: 0 0 45%;
+    }
+    
+    .hero-image {
+        flex: 0 0 50%;
+        max-width: 600px;
+    }
+    
+    .hero-img {
+        border-radius: 25px;
+        box-shadow: 0 25px 50px rgba(76, 33, 189, 0.2);
+    }
+    
+    .feature-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .feature-item {
+        flex: 1 1 calc(25% - 30px);
+        max-width: 280px;
+        padding: 40px 25px;
+    }
+    
+    .market-carousel {
+        gap: 25px;
+    }
+    
+    .market-item {
+        flex: 0 0 calc(20% - 25px);
+        max-width: 200px;
+        padding: 25px 20px;
+    }
+    
+    .rewards-card {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+    
+    .rewards-content {
+        gap: 40px;
+    }
+    
+    .stats-container {
+        max-width: 1000px;
+        gap: 30px;
+    }
+    
+    .stat-item {
+        padding: 35px 25px;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-content {
+        flex: 0 0 40%;
+    }
+    
+    .hero-image {
+        flex: 0 0 55%;
+        max-width: 700px;
+    }
+    
+    .feature-grid {
+        max-width: 1400px;
+    }
+    
+    .feature-item {
+        flex: 1 1 calc(25% - 40px);
+        max-width: 300px;
+    }
+    
+    .stats-container {
+        max-width: 1200px;
+    }
 } 
