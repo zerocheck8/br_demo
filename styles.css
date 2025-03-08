@@ -674,10 +674,11 @@ a:hover {
     justify-content: center;
 }
 
-.legal-links a {
+.legal-links a, .legal-links span {
     color: rgba(255, 255, 255, 0.7);
     margin-left: 20px;
     transition: color 0.3s ease;
+    font-size: 14px;
 }
 
 .legal-links a:hover {
@@ -1000,6 +1001,10 @@ a:hover {
         padding: 12px 8px;
         min-width: 0;
     }
+    
+    .rewards-heading {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1074,7 +1079,7 @@ a:hover {
     }
     
     .rewards-heading {
-        font-size: 24px;
+        font-size: 18px;
     }
     
     .rewards-subtitle {
@@ -1345,14 +1350,14 @@ a:hover {
 }
 
 .rewards-heading {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: #1a1a3c;
     margin-bottom: 10px;
 }
 
 .highlight-rate {
-    font-size: 36px;
+    font-size: 24px;
     color: var(--purple-medium);
     font-weight: 800;
     position: relative;
@@ -1648,7 +1653,7 @@ a:hover {
     }
     
     .rewards-heading {
-        font-size: 28px;
+        font-size: 20px;
     }
     
     .rewards-subtitle {
@@ -1705,7 +1710,7 @@ a:hover {
     }
     
     .rewards-heading {
-        font-size: 24px;
+        font-size: 18px;
     }
     
     .rewards-subtitle {
